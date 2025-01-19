@@ -1,4 +1,4 @@
-package org.example;
+package buoi1;
 
 public class HelloWorld {
 //    public static String name = "A";

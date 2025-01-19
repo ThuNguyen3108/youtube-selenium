@@ -1,4 +1,4 @@
-package org.example;
+package buoi1;
 
 public class Main {
     public String name = "Auto";
