@@ -7,12 +7,21 @@ class A {
     }
 }
 
-class B_Protected {
+//class B_Protected {
+//    protected void msg() {
+//        System.out.println("Hello Java");
+//    }
+//}
+public class PhamViTruyCap {
     protected void msg() {
         System.out.println("Hello Java");
     }
-}
-public class PhamViTruyCap {
+    public int cong2so(int a, int b) {
+        return a + b;
+    }
+    public void print(int a, int b) {
+        System.out.println(cong2so(a,b));
+    }
     public static void main(String[] args) {
         // khoi tao lop
         A obj = new A();

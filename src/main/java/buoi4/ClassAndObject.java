@@ -19,7 +19,9 @@ public class ClassAndObject {
         int b = 4;
         //Khoi tao 1 object thuoc 1 class
         TestClass obClass = new TestClass();
-        obClass.Print(a,b); // cach goi ra cac thanh phan trong 1 class thong qua object
+        PhamViTruyCap phamViTruyCap = new PhamViTruyCap();
+        phamViTruyCap.msg();
+//        obClass.Print(a,b); // cach goi ra cac thanh phan trong 1 class thong qua object
 
     }
 }

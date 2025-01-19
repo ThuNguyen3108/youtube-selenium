@@ -1,0 +1,8 @@
+Tạo 1 class tại package "Employee" chung chứa:
+thông tin nhan vien: ten, tuoi, ngay sinh, gioi tinh
+ham cong 2 so, ham nhan 2 so nguyen
+in ra thong tin tren
+
+Tạo class 2 kế thừa class 1 tại package "GetInfoEmployee"
+- Gọi lại tất cả các hàm và thuộc tính trong class 1
+- Truyền 2 giá trị vào 2 hàm cộng và nhân từ lớp 1 để in ra kết quả
