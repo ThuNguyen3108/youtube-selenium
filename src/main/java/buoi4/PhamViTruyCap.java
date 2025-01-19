@@ -15,6 +15,7 @@ class A {
 public class PhamViTruyCap {
     protected void msg() {
         System.out.println("Hello Java");
+        System.out.println("This is msg function at PhamViTruyCap");
     }
     public int cong2so(int a, int b) {
         return a + b;
