@@ -17,11 +17,14 @@ public class TinhDaHinh extends Bike{
     public static void main(String[] args) {
         Bike bk = new Bike();
         Bike bk1 = new TinhDaHinh();
-        TinhDaHinh bk2 = new TinhDaHinh();
+        TinhDaHinh bk2 = new TinhDaHinh(); // sử dụng của thằng cha và con
         bk.run();
         bk1.run();
         bk2.stop();
+        bk2.run();
     }
     // thang con thi chi goi duoc con thoi
     // thang cha khong the goi thang con
 }
+
+// stop 56:04
