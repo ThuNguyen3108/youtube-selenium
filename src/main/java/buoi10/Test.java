@@ -18,15 +18,21 @@ public class Test {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.navigate().to("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
-        driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
-        driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
+        WebElement titleElement = driver.findElement(By.xpath("//button[normalize-space()='Login']"));
+//        String titleString = titleElement.getText();
+        String titleString = titleElement.getCssValue("border-bottom-left-radius");
+        System.out.println(titleString);
 
-        driver.findElement(By.xpath("//span[normalize-space()='My Info']")).click();
+//        driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
+//        driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
+//        // dùng submit khi mà có cái type là submit
+//        driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
 
-        WebElement genderEnabled = driver.findElement(By.xpath("(//label[normalize-space()='Male'])[1]"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", genderEnabled);
-        Thread.sleep(2000);
+//        driver.findElement(By.xpath("//span[normalize-space()='My Info']")).click();
+//
+//        WebElement genderEnabled = driver.findElement(By.xpath("(//label[normalize-space()='Male'])[1]"));
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", genderEnabled);
+//        Thread.sleep(2000);
 
 //        final String parentWindowHandle = driver.getWindowHandle();
 //        final String[] windowHandles = driver.getWindowHandles().toArray(new String[0]);
@@ -41,16 +47,16 @@ public class Test {
 //                System.out.println("Van con o window handle dau tien");
 //            }
 
-        if (genderEnabled.isDisplayed() && genderEnabled.isEnabled()) {
-            if (genderEnabled.isSelected()) {
-                System.out.println("Đã được chọn");
-                genderEnabled.click();
-            } else {
-                System.out.println("Chưa được chọn");
-            }
-        } else {
-            System.out.println("Phần tử không khả dụng");
-        }
+//        if (genderEnabled.isDisplayed() && genderEnabled.isEnabled()) {
+//            if (genderEnabled.isSelected()) {
+//                System.out.println("Đã được chọn");
+//                genderEnabled.click();
+//            } else {
+//                System.out.println("Chưa được chọn");
+//            }
+//        } else {
+//            System.out.println("Phần tử không khả dụng");
+//        }
         /*
         * Trả về Chưa được chọn là đúng rồi */
 
