@@ -37,6 +37,17 @@ public class AutomationTestNG {
         driver.navigate().to("https://anhtester.com");
     }
 
+    @Test
+    public void Demo2() {
+        System.out.println("TestNG Test Method");
+        driver.navigate().to("https://automationblogvn.com/topic-1-tong-quan-ve-testng/");
+    }
+    @Test
+    public void Demo3() {
+        System.out.println("TestNG Test Method");
+        driver.navigate().to("https://techydevs.com/demos/themes/html/listhub-demo/listhub/index.html");
+    }
+
     @AfterTest
     public void afterTest() throws Exception {
         System.out.println("After Test Execution");

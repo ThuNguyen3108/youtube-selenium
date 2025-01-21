@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1">
+    <test name="Test1">
+<!--        <packages>-->
+<!--            <package name="chixinhcoding.*">-->
+<!--                <include name="chixinhcoding.a1_firstpackage"></include>-->
+<!--            </package>-->
+<!--        </packages>-->
+                <classes>
+                    <class name="chixinhcoding.a1_firstpackage.firstclass" />
+<!--                    <class name="chixinhcoding.a1_firstpackage.secondclass" />-->
+<!--                    <class name="chixinhcoding.a2_secondpackage.secondclass" />-->
+                </classes>
+<!--Naming
+com.example.region.mypackage
+-->
+    </test>
+</suite>

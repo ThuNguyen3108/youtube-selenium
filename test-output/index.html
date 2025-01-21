@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="buoi15.AutomationTestNG" class="method navigator-link" hash-for-method="Demo1">Demo1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="chixinhcoding.a1_firstpackage.firstclass" class="method navigator-link" hash-for-method="secondMethod">secondMethod</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">buoi15.AutomationTestNG</span>
+              <span class="class-name">chixinhcoding.a1_firstpackage.firstclass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Demo1">
-                  </a> <!-- Demo1 -->
-                  <span class="method-name">Demo1</span>
+                  <a name="secondMethod">
+                  </a> <!-- secondMethod -->
+                  <span class="method-name">secondMethod</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +145,11 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;buoi15.AutomationTestNG&quot;/&gt;
+      &lt;class name=&quot;chixinhcoding.a1_firstpackage.firstclass&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;firstMethod&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- chixinhcoding.a1_firstpackage.firstclass --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -187,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Demo1')
-data.setCell(0, 2, 'buoi15.AutomationTestNG')
-data.setCell(0, 3, 9629);
+data.setCell(0, 1, 'secondMethod')
+data.setCell(0, 2, 'chixinhcoding.a1_firstpackage.firstclass')
+data.setCell(0, 3, 28);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 28 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -209,9 +213,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">chixinhcoding.a1_firstpackage.firstclass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">firstMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -220,19 +231,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">buoi15.AutomationTestNG</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              <div class="chronological-class-name">chixinhcoding.a1_firstpackage.firstclass</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Demo1</span>
-                <span class="method-start">2230 ms</span>
+                <span class="method-name">secondMethod</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">11867 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

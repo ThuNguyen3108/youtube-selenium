@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Combine Suite" verbose="1">
+    <test name="Combine Test">
+        <packages>
+            <package name="a1_firstpackage" />
+        </packages>
+        <classes>
+            <class name="chixinhcoding.a2_secondpackage.firstclass" />
+            <class name="chixinhcoding.a3_thirdpackage.firstclass">
+                <methods>
+                    <include name="firstTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

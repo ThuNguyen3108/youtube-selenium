@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-21T07:42:57 ICT" name="Suite" finished-at="2025-01-21T07:43:11 ICT" duration-ms="14112">
+  <suite started-at="2025-01-21T09:59:50 ICT" name="Suite" finished-at="2025-01-21T09:59:50 ICT" duration-ms="110">
     <groups>
     </groups>
-    <test started-at="2025-01-21T07:42:57 ICT" name="Test1" finished-at="2025-01-21T07:43:11 ICT" duration-ms="14112">
-      <class name="buoi15.AutomationTestNG">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:buoi15.AutomationTestNG@6ac13091]" started-at="2025-01-21T07:42:57 ICT" name="beforeTest" finished-at="2025-01-21T07:42:59 ICT" duration-ms="2163" status="PASS">
+    <test started-at="2025-01-21T09:59:50 ICT" name="Test1" finished-at="2025-01-21T09:59:50 ICT" duration-ms="110">
+      <class name="chixinhcoding.a1_firstpackage.firstclass">
+        <test-method signature="secondMethod()[pri:0, instance:chixinhcoding.a1_firstpackage.firstclass@222114ba]" started-at="2025-01-21T09:59:50 ICT" name="secondMethod" finished-at="2025-01-21T09:59:50 ICT" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="Demo1()[pri:0, instance:buoi15.AutomationTestNG@6ac13091]" started-at="2025-01-21T07:42:59 ICT" name="Demo1" finished-at="2025-01-21T07:43:09 ICT" duration-ms="9629" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Demo1 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:buoi15.AutomationTestNG@6ac13091]" started-at="2025-01-21T07:43:09 ICT" name="afterTest" finished-at="2025-01-21T07:43:11 ICT" duration-ms="2239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- buoi15.AutomationTestNG -->
+        </test-method> <!-- secondMethod -->
+      </class> <!-- chixinhcoding.a1_firstpackage.firstclass -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>
