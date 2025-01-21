@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestAnnotation_1 Suite" verbose="2">
+    <!-- Test chạy tất cả các method trong TestAnnotation_1 -->
+    <test name="Test all methods">
+        <classes>
+            <class name="buoi17_TestAnnotation.Login" />
+        </classes>
+    </test>
+
+    <!-- Test chạy các method thuộc group 'group1' -->
+    <test name="Test group1 methods">
+        <groups>
+            <run>
+                <include name="group1" />
+            </run>
+        </groups>
+        <classes>
+            <class name="buoi17_TestAnnotation.Login" />
+        </classes>
+    </test>
+</suite>
