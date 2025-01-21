@@ -1,21 +1,18 @@
 package buoi14;
 import Initialization.Init;
-import org.apache.commons.compress.utils.OsgiUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.junit.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.support.ui.Select;
 
-public class Handle_Dropdown extends Init{
+import org.openqa.selenium.support.ui.Select;
+import Validate.*;
+
+public class Handle_Dropdown_Tinh extends Init{
     public static void main(String[] args) throws Exception {
+        HelperValidate validate = new HelperValidate();
         Setup();
         driver.navigate().to("https://www.w3schools.com/css/css_dropdowns.asp");
         Thread.sleep(2000);
@@ -51,6 +48,8 @@ public class Handle_Dropdown extends Init{
         } else {
             System.out.println("Khong phai dang Multi Select");
         }
+        validate.checkText(element, "ABC");
+
         Thread.sleep(1000);
         // Kiem tra so luong the Option
         System.out.println(selectSimple.getOptions().size());

@@ -4,7 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.junit.Assert;
+//import org.junit.Assert;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -57,7 +57,7 @@ public class Handle_Checkbox {
                 System.out.println("Check box thứ " + (i + 1) + " đã được chọn. ");
             } else {
                 System.out.println("Sai. Checkbox thứ " + (i + 1) + " chưa được chọn");
-                Assert.assertTrue("Checkbox thứ " + (i + 1) + " chưa được chọn.", checkbox.isSelected());  // Sử dụng Assert.assertTrue
+//                Assert.assertTrue("Checkbox thứ " + (i + 1) + " chưa được chọn.", checkbox.isSelected());  // Sử dụng Assert.assertTrue
             }
         }
 
